@@ -1,0 +1,84 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    background-color: #000;
+    align-items: center;
+    height: 100px;
+}
+.line{
+    border: 1px solid #fff;
+    height: 35px;
+}
+.logo{
+    margin-left: 100px;
+    margin-right: 50px;
+    width: 100px;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+.list-item{
+    color: #fff;
+
+}
+li:nth-child(1)::after{
+    content: 'v';
+    font-size: 13px;
+    align-self: center;
+    padding-left: 10px;
+}
+.button-small{
+    background-color: #a53dd1;
+    color: #fff;
+    border: none;
+    padding: 10px 13px;
+    border-radius: 7px;
+    position: relative;
+    left: 700px;
+}
+
+
+/* Hero */
+.hero{
+    background-image: url(./assets/bg.png);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-heading{
+    color: #fff;
+    font-size: 70px;
+    justify-self: center;
+    width: 1000px;
+    text-align: center;
+}
+
+.hero-description{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.button-large{
+    background-color: #a53dd1;
+    color: #fff;
+    border: none;
+    font-size: 25px;
+    padding: 20px 25px;
+    border-radius: 7px;
+}

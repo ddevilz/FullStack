@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+/* navbar */
+.main{
+    background: url('./Assets/Photos/futuristic-bg.png')no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    color: #fff;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+
+}
+.list > .home{
+    margin-left: 90px;
+}
+
+.btn{
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 15px 25px;
+}
+.btn:nth-child(2){
+    background: #f97000;
+    border: none;
+    color: #fff;
+    padding: 15px 25px;
+}
+
+
+
+
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+}
+.lhs h1{
+    font-size: 60px;
+    margin-top: 20%;
+}
+.lhs p{
+    font-weight: 300;
+    margin: 3% 0;
+}
+.btn-m{
+    background: #f97000;
+    border: 1px solid #f97000;
+    color: #fff;
+    padding: 15px 30px;
+}
+.btn-m:nth-child(2){
+    margin: 30px;
+    background: none;
+    border: 1px solid #fff;
+}
+.rhs{
+    position: relative;
+}
+.play-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:  20%;
+    width: 200px;
+    height: 350px;
+}
+.playButton:hover{
+    transform: scale(1.2);
+}
+
+
+
+.GameName{
+    /* padding: 0 15px; */
+    position: relative;
+    font-size: 25px;
+    font-weight: 300;
+}
+.GameName::before{
+    content: url('./Assets/Icons/dash.svg');
+    position: absolute;
+    top: -8px;
+    left: -55px;
+}
+.GameName::after{
+    content: url('./Assets/Icons/rightArrow.svg');
+    position: absolute;
+    right: -70px;
+}
+
+
+/* game */
+
+.game{
+    height: auto;
+    margin: 10% 0;
+}
+.game h1{
+    text-align: center;
+    color: #000;
+    margin: 5% 0;
+    font-size: 50px;
+}
+
+.card-div{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+.box{
+    background: url('./Assets/Photos/image\ 2.png')no-repeat;
+    background-position: 88%;
+    background-size: cover;
+    width: 300px;
+    height: 320px;
+    position: relative;
+}
+.gameD{
+    background: url('./Assets/Photos/image\ 2.png')no-repeat;
+    background-position: 88%;
+    filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 0;
+    height: 30%;
+    width: 100%;
+    z-index: 1;  
+}
+
+.text{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 14px;
+    bottom: 22px;
+    z-index: 2;
+    width: 100%;
+    
+}
+.text-1{
+    position: absolute;
+    right: 10px;
+    bottom: 35px;
+    z-index: 2;
+}
+.btn-3{
+    padding: 10px 15px;
+    background-color: #f97000;
+    border: none;
+    color: #fff;
+}
+
+.box:nth-child(2){
+    background: url('./Assets/Photos/image\ 3.png')no-repeat;
+    background-position: 48%;
+    background-size: cover;
+    width: 300px;
+    height: 320px;
+    position: relative;
+}
+
+.gameD1{
+    background: url('./Assets/Photos/image\ 3.png')no-repeat;
+    background-position: 88%;
+    filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 0;
+    height: 30%;
+    width: 100%;
+    z-index: 1;  
+}
+
+.box:nth-child(3){
+    background: url('./Assets/Photos/image\ 4.png')no-repeat;
+    background-position: 48%;
+    background-size: cover;
+    width: 300px;
+    height: 320px;
+    position: relative;
+}
+
+.gameD2{
+    background: url('./Assets/Photos/image\ 4.png')no-repeat;
+    background-position: 88%;
+    filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 0;
+    height: 30%;
+    width: 100%;
+    z-index: 1;  
+}
+
+.box:nth-child(4){
+    background: url('./Assets/Photos/Rectangle\ 56.png')no-repeat;
+    background-position: 48%;
+    background-size: cover;
+    width: 300px;
+    height: 320px;
+    position: relative;
+}
+.gameD3{
+    background: url('./Assets/Photos/Rectangle\ 56.png')no-repeat;
+    background-position: 88%;
+    filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 0;
+    height: 30%;
+    width: 100%;
+    z-index: 1;  
+}
+
+.box:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #474545;
+}
+
+.gma-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #000;
+    margin-bottom: 5%;
+}
+
+.gma-img img{
+    display: inline-block;
+    width: 900px;
+    clip-path: inset(0 15% 0 15%);
+}
+
+.gma-txt h1{
+    font-size: 56px;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+.gma-txt p{
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+
+.btn-2{
+    border: 1px solid #f97000;
+    background: none;
+    padding: 15px 30px;
+    color: #f97000;
+    margin-left: 20px;
+}
+
+.gm-wk{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 10%;
+}
+.gm-wk>div>h1{
+    font-size: 60px;
+}
+.lft-btn{
+    border: none;
+    padding: 15px;
+    margin-right: 10px;
+}
+.rht-btn{
+    border: none;
+    background-color: #f97000;
+    padding: 15px;
+}
+.lft-btn:hover, .rht-btn:hover{
+    transform: scale(1.2);
+}
+
+.game-week{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 10%;
+    row-gap: 20px;
+    margin-bottom: 10%;
+}
+
+.game-w{
+    color: #000;
+    display: flex;
+    align-items: center;
+    width: 700px;
+    justify-content: space-around;
+}
+.wk-txt h1{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.wk-txt p{
+    margin: 16px 0;
+}
+
+.games-year{
+    text-align: center;
+    background-color: #000308;
+    color: #fff;
+    position: relative;
+    height: 110vh;
+    overflow: hidden;
+    /* margin: 0 11%; */
+}
+
+.gy-txt h1{
+    font-size: 60px;
+    padding: 5% 0;
+}
+
+.gy-txt p{
+    text-align: start;
+    display: inline-block;
+    position: absolute;
+    left: 40%;
+    font-weight: 200;
+}
+
+.ms-1{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    left: 11%;
+    top: 25%;
+}
+.ms-2{
+    width: 300px;
+    position: absolute;
+    /* left: 40%; */
+    right: 44%;
+    bottom: 150px;
+}
+.ms-3{
+    width: 300px;
+    position: absolute;
+    right: 20%;
+    bottom: 150px;
+}
+.ms-txt{
+    width: 80%;
+    position: absolute;
+    top: 40%;
+    bottom: 60%;
+    right: -10%;
+}
+
+.ban::before{
+    content: '';
+    background: url('./Assets/Photos/Rectangle\ 606.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 60vh;
+    left: 0;
+    bottom: 0;
+}
+.ban{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.692);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    color: #fff;
+    position: relative;
+
+}
+
+.ban h1{
+    font-size: 60px;
+    padding-top: 7%;
+    margin-bottom: 20px;
+}
+.ban p{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.btn-m-2{
+    background: #f97000;
+    border: 1px solid #f97000;
+    color: #fff;
+    font-size: 20px;
+    padding: 17px 40px;
+}
+
+.foot{
+    display: flex;
+    background-color: #000308;
+    color: #fff;
+    gap: 100px;
+    justify-content: space-around;
+    padding: 5% 0;
+}
+
+.foot ul{
+    list-style: none;
+}
+
+.foot ul li {
+    margin: 16px;
+    font-weight: 300;
+}
+
+.foot ul li:nth-child(1){
+    margin-bottom: 25px;
+}
+
+.foot-logo img{
+    margin: 15px 0;
+}
+
+.foot-logo p{
+    font-weight: 300;
+    margin: 10px 0;
+}
+.sm img{
+    margin-top: 15px;
+    margin-right: 15px;
+}
+.blank{
+    background-color: #000c1f;
+    height: 10vh;
+}
+

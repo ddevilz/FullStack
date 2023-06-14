@@ -1,0 +1,1 @@
+const img = document.querySelector("img").src = 'https://media.istockphoto.com/id/1393467574/photo/three-flags-of-the-united-states-of-america-waving-in-the-wind.jpg?s=2048x2048&w=is&k=20&c=feh_slTQpI6NaCD4hQZGU8sMx27dNndpAXPmUEskYw4=';

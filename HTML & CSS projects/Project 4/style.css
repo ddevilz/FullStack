@@ -1,0 +1,92 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* navbar */
+.navbar-container{
+    display: flex;    
+    align-items: center;
+    height: 100px;
+}
+.navbar-container img{
+    width: 120px;
+    margin-left: 150px;
+}
+.list{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0 50px;
+    
+}
+
+.list-item{
+    color: #83828c;
+}
+.list-item:hover{
+    color: #000;
+}
+
+.button-group{
+    position: absolute;
+    right: 300px;
+}
+.nav-button{
+    padding: 10px 20px;
+    color: #fcfcfc;
+    background-color: #5b58fc;
+    border: none;
+    border-radius: 8px;
+}
+
+
+/* media query */
+
+@media (max-width: 1239px){
+    .button-group{
+        display: none;
+    }
+    .banner-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:938px) {
+    .list{
+        flex: none;
+        visibility: hidden;
+    }
+}
+
+/* banner */
+.banner-container{
+    display: flex;
+    margin: 0 150px;   
+}
+
+.heading-text{
+    font-size: 70px;
+    color: #342a63;
+    margin-bottom: 0;
+}
+span{
+    color: #6362bf;
+}
+
+.description{
+    color: #83828c;
+}
+.nav-button.btn{
+    padding: 20px 25px;
+}
+
+/* media query */
+@media (max-device-width:1336px){
+    .banner-container{
+        display: flex;
+        flex-direction: column;
+    }
+}

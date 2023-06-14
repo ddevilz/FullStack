@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #151515;
+}
+.container{
+    max-width: 1380px;
+    margin-inline: auto;
+}
+
+/* NavBar */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    color: #f8f8f9;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.logo{
+    width: 100px;
+}
+.list{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+.lang-contact{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contact-us{
+    position: relative;
+    z-index: 1;
+}
+.downarrow{
+    font-size: 7px;
+}
+.contact-us::before{
+    content: url('./Project 1- Credit Card Landing Page/Assets/Icons/btn-pink-bg.svg');
+    position: absolute;
+    top: -2px;
+    left: -10px;
+    z-index: -1;
+    display: inline-block;
+    width: 9px;
+}
+
+
+/* hero section */
+
+.hero{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+.card-img{
+    position: relative;
+}
+.front-cards{
+    display: inline-block;
+    position: absolute;
+    right: -190px;
+    top: 10px;
+    clip-path: inset(0 25% 0 0);
+    height: 600px;
+    z-index: -1;
+}
+.back-cards{
+    position: absolute;
+    z-index: -2;
+    top: -47px;
+    right: 52px;
+    height: 600px;
+}
+.text{
+    /* padding-left: 110px; */
+    color: #f8f8f9;
+    margin-top: 120px;
+}
+.text .heading{
+    font-size: 75px;
+    display: inline-block;
+    width: 70%;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+.text p{
+    width: 40%;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.btn{
+    margin: 40px 27px;
+    background-color: transparent;
+    border: none;
+    color: #f8f8f9;
+    font-size: 19px;
+    position: relative;
+    z-index: 1;
+}
+.btn::before{
+    content: url('./Project 1- Credit Card Landing Page/Assets/Icons/btn-pink-bg.svg');
+    position: absolute;
+    z-index: -1;
+    left: -30px;
+    display: inline-block;
+    width: 9px;
+}
+.btn::after{
+    content: url('./Project 1- Credit Card Landing Page/Assets/Icons/RightArrow.svg');
+    margin: 12px;
+}
+.text span{
+    color: #ab00ba;
+    font-weight: bold;
+}
+.data{
+    display: flex;
+    color: #f8f8f9;
+    /* padding-left: 100px; */
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+.data-r{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding-left: 30px;
+}
+.data-l{
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    border-right: 1px solid #f8f8f9;
+}
+.plus{
+    color: #ab00ba;
+
+}
+
+/* logo banner */
+
+.logo-banner{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background-color: #292828;
+}
+
+/* sec */
+
+.sec-cards{
+    color: #f8f8f9;
+    height: 800px;
+    margin: 10% 0;
+    width: 100%;
+}
+
+.sec-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    gap: 60px;
+}
+.sec-text h1{
+   font-size: 75px; 
+}
+.sec-text p{
+    width: 30%;
+}
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 290px;
+    background: #262627;
+    text-align: center;
+    border: 2px solid #4b4b4a;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+.card:hover{
+    background: linear-gradient(90deg, #3f3f3e,#646762);
+    top: -70px;
+    border: 2px solid #b0afae;
+}
+
+/* card choices */
+
+.card-choices{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1060px;
+    background-color: #fceffb;
+    position: relative;
+    text-align: center;
+}
+.card-choices > h1{
+    font-size: 65px;
+    margin-top: 10%;
+    line-height: 1.3;
+}
+
+.card-choices > p{
+    width: 40%;
+    margin-top: 5%;
+}
+
+.card-choices img{
+    height: 700px;
+    position: absolute;
+    bottom: 0px;
+    width: 60%;
+}
+
+/* customer reviews */
+
+.cust-reviews{
+    text-align: center;
+    margin: 10%;
+    background-color: #151515;
+}
+
+.cust-text{
+    margin: 100px 10px;
+    color: #f8f8f9;
+}
+
+.cust-text > h1{
+    font-size: 70px;
+    margin-bottom: 70px;
+}
+.cust-text > p{
+    margin-bottom: 90px;
+}
+
+.reviews{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 40px;
+}
+
+.review-box{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 170px;
+    background: #1e1f24;
+    text-align: start;
+    border: 2px solid #4b4b4a;
+    font-size: 16px;
+    gap: 6px;
+    padding: 5px;
+    border: 2px solid #646762;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+    color: #f8f8f9;
+}
+
+.review-box:hover{
+    background: linear-gradient(90deg, #373737,#646762);
+    top: -10px;
+    border: 2px solid #b0afae;
+}
+
+.review-box img{
+    width: 200px;
+}
+
+
+.dot-container {
+    text-align: center;
+    padding: 90px;
+    display: inline-block;
+  }
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #4f4d4d;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.expand{
+    height: 15px;
+    width: 60px;
+    border-radius: 25px;
+    background-color: #ab00ba;
+    box-shadow: 0 0 20px #ab00ba;
+}
+
+/* last */
+
+.last{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* margin: 20% 0; */
+    height: 600px;
+}
+.img1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 10px;
+    top: -120px;
+    /* top: 0; */
+    z-index: -3;
+}
+.img2{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 10px;
+    top: -120px;
+    /* top: 0; */
+    z-index: -2;
+}
+.dia-l{
+    
+    position: absolute;
+    left: 10px;
+    top: -120px;
+    /* top: 0; */
+    z-index: -1;
+    width: 30%;
+}
+.dia-r{
+    width: 30%;
+    position: absolute;
+    right: 10px;
+    top: -85px;
+    z-index: -1;
+}
+.text-last{
+    text-align: center;
+
+}
+.text-last > h1{
+    font-size: 70px;
+}
+
+
+/* footer */
+
+.footer{
+    display: flex;
+    align-items: center;
+    
+    color: #f8f8f9;
+    /* margin: 5% 5%; */
+    flex-wrap: wrap;
+}
+.list-cont{
+    margin-left: 30%;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+
+
+/* media query */
+
+@media screen and (max-width: 680px) {
+    .container{
+        width: 480px;
+    }
+    /* .card-img{
+        width: fit-content;
+    } */
+    .back-cards{
+        width: 100%;
+        right: -10%;
+        /* height: 50%; */
+    }
+    .front-cards{
+        width: 100%;
+        right: -40%;
+        opacity: 0.1;
+    }
+    .hero{
+        height: auto;
+    }
+    .hero > .text > .heading{
+        padding-left: 0;
+        font-size: 50px;
+    }
+    
+    .navbar{
+        flex: none;
+        overflow: hidden;
+    }
+    /* .logo{
+        margin: auto;
+    } */
+    
+    .logo-banner {
+        height: auto;
+        padding: 5%;
+        overflow: hidden;
+    }
+
+    .lang-contact{
+        visibility: hidden;
+    }
+
+    .navbar> div >.list{
+        /* flex: none; */
+        visibility: hidden;
+        
+    }
+    .sec-text > .heading{
+        font-size: 40px;
+    } 
+    .sec-text >p {
+        width: auto;
+    }
+    .cust-text > .heading{
+        font-size: 40px;
+    }
+    .card-choices{
+        width: 100%;
+    }
+    .dia-l, .data-r, .img1,.img2{
+        width: 100%;
+        height: 70%;
+    }
+    .text-last > .heading{
+        font-size: 40px;
+    }
+}
+    
+
+
+
+@media screen and (max-width: 1080px) {
+    .front-cards{  
+        opacity: 0.5;
+    }
+
+    .logo-banner {
+        height: auto;
+        padding: 5%;
+        overflow: hidden;
+    }
+    .card-body {
+        
+        height: auto;
+        width: auto;
+        margin: 10% 5%;
+    }
+
+    .last{
+        width: 100%;
+        margin-top: 30%;
+    }
+    .navbar,.footer{
+        margin: 0 3%;
+    }
+    .hero{
+        margin: 0 3%;
+    }
+}
