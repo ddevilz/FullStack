@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  box-sizing: border-box;
+  color: aliceblue;
+}
+
+.App{
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: center;
+}
+
+.box{
+  height: 300px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
